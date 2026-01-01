@@ -1,0 +1,33 @@
+Question1 Commands
+1. 	whoami
+	groups
+
+2.	pwd
+	ls -la
+
+3.	#create user_info file
+	echo "Linux user environment verified">user_info.txt
+	cat user_info.txt
+	
+	#list file information
+	ls -l user_info.txt
+
+4.	wc -c user_info.txt
+
+5.	mkdir --help
+
+6.	ls ~|sort
+
+7.	#Create log file
+	echo "2024-03-26 09:15:32 [admin] User authentication successful" > log.txt
+	echo "2024-03-26 11:42:18 [admin] System backup initiated" >> log.txt
+	echo "2024-03-26 14:03:55 [admin] Security policy updated" >> log.txt
+
+	# Search for admin entries
+	grep "admin" log.txt
+
+8.	uname -r
+
+9.	ping -c 4 www.google.com
+
+10.	uptime

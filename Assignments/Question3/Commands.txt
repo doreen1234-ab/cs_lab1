@@ -1,0 +1,31 @@
+1.	echo "System Administration Project Data: backup schedules, user info, server logs">sample_data.txt
+	cat sample_data.txt
+
+2.	ln sample_data.txt sample_hard.txt
+	ls -li sample_data.txtx sample_hard.txt
+
+3.	ln -s sample_data.txt sample_soft.txt
+	ls -li sample_data.txt sample_soft.txt
+
+4.	ls -i sample_data.txt sample_hard.txt sample_soft.txt
+
+5.	echo "Files sharing same inode: " && ls -i sample_data.txt sample_hard.txt
+
+6.	stat sample_data.txt
+
+7.	du -sh ~
+
+8.	ls -lh
+
+9.	rm sample_soft.txt
+	ls -l sample_data.txt
+	cat sample_data.txt
+
+10.	# du examples
+	du -h --max-depth=1 ~
+	du -ah ~ | head -20
+
+	# df examples
+	df -h
+	df -i
+	df -hT

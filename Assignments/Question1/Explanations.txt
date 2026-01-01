@@ -1,0 +1,23 @@
+Question1 Explanations
+1.	The 'whoami' command was executed to display the currently authenticated user account.
+	The 'groups' command displayed all group memberships associated with this user account. 
+
+2.	The 'pwd' (present working directory) command was utilised to display the current directory location.
+	The 'ls -la' command lists directory contents including hidden files in long format i.e. displaying permissions, ownerships, 	timestamps, and sizes.
+
+3.	A file was created using the 'echo' command with output redirection(>). This generated 'user_info.txt' containing the specified 	string.
+	Verification was conducted using the 'cat' command to display file's contents, and the 'ls -l' command to provide permissions, 	ownership, size, and timestamp.
+
+4.	The 'wc' with option '-c' command was executed to perform file integrity check. The measurement corresponds to the length of the 	string contained in file user_info.txt plus the newline character(\n).
+
+5.	Since the 'man' command didn't work in the sandbox environment, the 'help' command was executed. The '-v'(--verbose) option displays 	confirmation messages for each successfully created directory; providing immediate feedback.
+
+6.	The 'ls' command was executed to display home directory contents and the '~|sort' utility gave output in lexicographical 	organization.
+
+7.	A log file was created with three sample administrative entries using echo commands. The grep utility filtered this file and 	displayed only the lines containing "admin" which happened to be all three lines of the file.
+
+8.	The 'uname -r' command was used to perform system information check. The output confirmed the operation Linux kernel vision.
+
+9.	Network connectivity testing was attempted using ICMP echo requests via 'ping -c 4 www.google.com'. The command returned 4 errors 	indicating external network access restrictions due to sandbox environment. Under normal environments, four probe packets would be 	transmitted to www.google. com with successful receipt confirmation.
+
+10.	System operational status was assessed using the 'uptime' command. First, it reports system availability. Second it shows user 	sessions. Third, it displays load average to confrm optimal system performance under current load conditions.

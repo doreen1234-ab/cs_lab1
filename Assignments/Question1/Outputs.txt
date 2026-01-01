@@ -1,0 +1,47 @@
+Question2 Outputs
+1.	coder
+	coder sudo
+
+2.	/home/coder
+	list of a total of 54 visible and hidden files in long format
+
+3.	Linux user environment verified
+	-rw-r--r-- 1 coder coder 32 Dec 29 18:41 user_info.txt
+
+4.	32 user_info.txt
+
+5.	Usage of command and available options with brief description.
+
+6.	coursera
+	data
+	Desktop
+	Desktop -ro
+	Desktop.save
+	Documents
+	Downloads
+	install
+	Music
+	node_modules
+	noVNC
+	package.json
+	package-lock.json
+	Pictures
+	Public
+	Templates
+	user_info.txt
+	Videos
+	wm.log
+	wm_startup.sh
+	workspace
+	wrapper_process.sh
+
+7.	2024-03-26 09:15:32 [admin] User authentication successful
+	2024-03-26 11:42:18 [admin] System backup initiated
+	2024-03-26 14:03:55 [admin] Security policy updated
+
+8.	6.5.0-1024-aws
+
+9.	network diagnostics output
+
+10.	17:25:12 up 9 days, 23 min, 0 users, load average: 7.80, 6.92, 5.95	
+	

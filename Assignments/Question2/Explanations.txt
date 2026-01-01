@@ -1,0 +1,19 @@
+1.	The 'mkdir' command was used to create a 'documents' directory in home directory. The 'ls' command was used to list all home 	directory contents for verification of creation of 'documents' directory.
+
+2.	The 'cd' command was used to navigate to specified directory. The 'touch' command was employed to create an empty file named 	'plan.txt'. The 'ls command was used in the documents directory to list all contents for verification of successful creation of 	'plan.txt' file.
+
+3.	The 'echo' command was used to type contents to be written to the file. The '>' was used to redirect output to the file thereby,	overwriting file contents. The 'cat' command was employed for verification.
+
+4.	The 'ls' command with option '-l' reveals permission string '-rw-r--r--' indicating owner read/write, group and others read access 	only. Ownership was confirmed as 'coder:coder', file size 93 bytes, and timestamp documentation.
+
+5.	The 'cp' command was executed to copy file contents into another file named 'plan_copy.txt'. The 'ls -l' and 'cat' command was 	employed for verification of successful copying.
+
+6.	The 'cd ..' command moved the directory one level up (to the parent folder). The 'mv' (move/rename) command was executed to rename 	the directory. Verification on successful operation was carried out using the 'ls -d' command.
+
+7.	The 'mkdir' command was used to demonstrate hierarchical structure by creation of directory 'archive' in 'project_documents' 	directory. Verification was carried out by listing all the contents in the 'project_documents' directory using the 'ls' command.
+
+8.	Moving of 'plan_copy.txt' into subdirectory 'archive' was carried out using the 'mv' command followed by specified location. 	Verification was done using the 'ls' command.
+
+9.	Recursive directory enumeration was performed using the 'ls' command with option '-R'. The output displays the parent directory 	containing 'plan.txt' and 'archive/' subdirectory, with the subdirectory containing 'plan_copy.txt'.
+
+10.	Absolute path resolution was obtained using 'realpath', which converted the relative path to a canonical absolute path. The output 	'/home/coder/project_documents/archive/plan_copy.txt' provides unambiguous file location identification.

@@ -1,0 +1,26 @@
+1.	 A sample data file was created in the home directory using the 'echo' command with redirection(>). 'cat' command was employed for 	verification to display the contents in the 'sample_data.txt' file.
+
+2.	Hardlink creation was performed using the 'ln' command followed by the name of the file for hardlink creation and the name of the 	hardlink to be created. Verification was carried out sing the 'ls' command with option '-li' to list information about the two 	files incuding their inode number. Upon execution, the two files share the same inode number indicating successful hardlink 	creation.
+
+3.	A symbolic link was created using 'ln -s'. The listing shows a different inode (230790) with 'l' file type indicator and arrow 	notation pointing to the target file. Unlike hard links, symbolic links are separate files containing path references rather than 	direct data block pointers.
+
+4.	Inode numbers were retrieved using 'ls' command with option '-i'. The output demonstrates that 'sample_data.txt' and 	'sample_hard.txt' share the same inode '230530' while sample_soft.txt possesses different inode number '230790' .
+
+5.	Inode analysis confirmed that 'sample_data.txt' and 'sample_hard.txt' share identical inode number '230530'. This occurs because 	hardlinks are multiple directory entries pointing to the same inode, representing different names for identical data while 	symbolic links maintain separate inodes as they are independent pointer files containing target path information.
+
+6.	The 'stat' command provided comprehensive metadata: file size (77 bytes), blocks (2 blocks), inode (230530), link count (2), 	permissions (0644), ownership, and three timestamps (access, modify, change). The link count of 2 confirms hardlink existence, 	while timestamps document file lifecycle events.
+
+7.	Disk usage of the home directory was measured using 'du' with option '-sh'(summary, human-readable) followed by home directory    	(~).The output indicates shows 8.9 megabytes of storage consumption.
+
+8.	Human-readable file sizes were generated using 'ls -lh' command. The output showed both regular files and symbolic links, 30K 	total disk usage, listed directories (2K–6K each) and files (77 bytes to 12K), with hard-linked files ('sample_data.txt' and 	'sample_hard.txt') sharing size and a symbolic link ('sample_soft.txt') pointing to one of them.
+
+9.	The symbolic link was removed using 'rm' followed by the symbolic link name 'sample_soft.txt'. To verify original file 	'sample_data.txt' was not affected, the 'ls -l' and 'cat' command were executed. This confirmed that neither the file or its 	contents were affected by removal of symbolic link.
+
+10.	#'du'(disk usage)
+	'du -h --max-depth=1' shows total disk usage of each top-level item in your directory in human-readable format.
+	'du -ah|head -20' shows all files and directories including hidden with sizes, but only the first 20 lines.
+	
+	#df(disk filesystem)
+	'df -h' shows available and used disk space for all mounted file systems in humann readable format.
+	'df -i' shows inode usage instead of disk space
+	'df -hT' shows disk space with filesystem type

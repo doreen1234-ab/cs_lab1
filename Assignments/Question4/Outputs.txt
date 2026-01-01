@@ -1,0 +1,32 @@
+1.	22:19:32 up 14 days,  5:16, 0 users,  load average: 2.04, 2.04, 2.19
+
+2.	lists of user processes
+
+3.	list of processes sorted by CPU usage in descending order.
+
+4.	[1] 335
+	[1]+ Running		sleep 60 &
+
+5.	PID NI COMMAND
+	326 0  bash
+	[1]+ Done		sleep 60
+
+	[1] 339
+
+	PID NI COMMAND
+	[1]+ Done		nice -n 5 sleep 30
+
+6.	memory usage information in human-readable format
+
+7.	Filesystem                                                     			Size Used Avail Use% Mounted on
+	dockerPool/f86298b1bcb259e0282ea08ee6bf6a2278c82Ff70b98064a73cdde4deb575f380    13G 3.7G  9.4G  29%  /
+
+8.	/bin/bash
+
+9.	Linux b382f48752c5 6.5.0-1024-aws #24~22.04.1-Ubuntu SMP Thu Jul 18 10:43:12 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+
+10.	3.1M    /home/coder/noVNC
+	2.2M    /home/coder/node_modules
+	16K    /home/coder/Desktop
+	14K    /home/coder/install
+	13K    /home/coder/Desktop.save

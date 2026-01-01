@@ -1,0 +1,29 @@
+1.	uptime
+
+2.	ps u
+
+3.	ps aux --sort=-%cpu
+
+4.	sleep 60 &
+	jobs
+
+5.	# First, see current priority of bash
+	ps -o pid,ni,comm -p $$
+
+	# Change priority (niceness)
+	nice -n 5 sleep 30 &
+	ps -o pid,ni,comm -p $!
+
+6.	free -h
+
+7.	df -h
+
+8.	echo $SHELL
+
+9.	touch system_report.txt
+	uname -a>system_report.txt
+	cat system_report.txt
+
+10.	ncdu ~
+	ncdu --version
+	du -sh ~/*|sort -hr|head -5

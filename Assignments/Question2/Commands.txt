@@ -1,0 +1,27 @@
+1.	mkdir documents
+
+2.	cd documents
+	touch plan.txt
+
+3.	echo "Project Omega: System maintenance scheduled for Q2 2026. Team debriefing every Monday at 8AM.">plan.txt
+	cat plan.txt
+
+4.	ls -l plan.txt
+
+5.	cp plan.txt plan_copy.txt
+	ls -l plan_copy.txt
+	cat plan_copy.txt
+
+6.	cd ..
+	mv documents project_documents
+	ls -d project_documents
+
+7.	mkdir project_documents/archive
+	ls project_documents
+
+8.	mv project_documents/plan_copy.txt project_documents/archive
+	ls project_documnets/archive
+
+9.	ls -R project_documents
+
+10.	realpath project_documents/archive/plan_copy.txt

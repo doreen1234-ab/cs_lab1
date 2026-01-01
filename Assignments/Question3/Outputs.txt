@@ -1,0 +1,32 @@
+1.	System Administration Project Data: backup schedules, user info, server logs
+
+2.	230530 -rw-r--r-- 2 coder coder 77 Jan  1 11:17 sample_data.txt
+	230530 -rw-r--r-- 2 coder coder 77 Jan  1 11:17 sample_hard.txt
+
+3.	230530 -rw-r--r-- 2 coder coder 77 Jan 1 11:17 sample_data.txt
+	230790 lrwxrwxrwx 1 coder coder 15 Jan 1 11:27 sample_soft.txt -> sample_data.txt
+
+4.	230530 sample_data.txt
+	230530 sample_hard.txt
+	230790 sample_soft.txt
+
+5.	Files sharing the same inode:
+	230530 sample_data.txt 230530 sample_hard.txt	
+
+6.	File: sample_data.txt  
+	Size: 77    Blocks: 2    IO Block: 512    regular file  
+	Device: 76h/118d    Inode: 230530    Links: 2  
+	Access: (0644/-rw-r--r--)  Uid: ( 1000/   coder)  Gid: ( 1000/   coder)  
+	Access: 2026-01-01 11:17:37.534647164 +0000  
+	Modify: 2026-01-01 11:17:37.534647164 +0000  
+	Change: 2026-01-01 11:21:35.775917183 +0000  
+	Birth: -
+
+7.	8.9M	/home/coder
+
+8.	List of all files in human-readable format.
+
+9.	-rw-r--r-- 2 coder coder 77 Jan 1 11:17 sample_data.txt
+	System Administration Project Data: backup schedules, user info, server logs
+
+10.	Output of disk utility demonstration
